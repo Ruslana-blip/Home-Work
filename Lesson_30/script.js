@@ -21,3 +21,15 @@ setTimeoutTwoSecond('Hello World!'); */
 	countDown();
 };
 timer(); */
+
+// 3. Створіть функцію, яка випадковим чином виводить одне з трьох повідомлень в консоль кожні 2 секунди.
+/* let arr = ['hello', 'buy', 'good afternoon'];
+let randomStr = array => {
+	let randomElem = () => {
+		let index = Math.floor(Math.random() * array.length);
+		console.log(array[index]);
+		setTimeout(randomElem, 2000);
+	};
+	randomElem();
+};
+randomStr(arr); */
