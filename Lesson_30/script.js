@@ -33,3 +33,34 @@ let randomStr = array => {
 	randomElem();
 };
 randomStr(arr); */
+
+// Завдвння зі статті
+/* 1.Вивід кожної секунди
+Напишіть функцію printNumbers(from, to) яка виводить число кожну секунду, починаючи від from і закінчуючи to.
+Зробіть два варіанти рішення.
+Використовуючи setInterval.
+Використовуючи вкладений setTimeout */
+/* let printNumbers = (from, to) => {
+	let returnNumber = () => {
+		console.log(from);
+		from++;
+		if (from <= to) {
+			setTimeout(returnNumber, 1000);
+		}
+	};
+	returnNumber();
+};
+printNumbers(2, 7); */
+//
+/* let printNumbers = (from, to) => {
+	let intervalSet = setInterval(() => {
+		console.log(from);
+		if (from === to) {
+			clearInterval(intervalSet);
+		}
+		from++;
+	}, 1000);
+};
+printNumbers(2, 7); */
+
+// 2.setTimeout запуститься лише після завершення поточного коду.
